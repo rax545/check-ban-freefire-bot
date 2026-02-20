@@ -6,7 +6,7 @@ import asyncio # Import asyncio for timeout
 load_dotenv()
 
 async def check_ban(uid: str) -> dict | None:
-     api_url = f"http://raw.thug4ff.com/check_ban/check_ban/{uid}"
+     api_url = f"http://raw.thug4ff.com/check_ban/{uid}"
     
     timeout = aiohttp.ClientTimeout(total=10) # 10 seconds total timeout
 
